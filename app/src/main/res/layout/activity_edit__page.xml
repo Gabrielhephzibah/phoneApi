@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:background="?attr/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:gravity="center_horizontal"
+                android:paddingTop="30dp"
+                android:layout_height="wrap_content"
+                android:text="Welcome Hephzibah
+                            You can edit your
+                            product here "
+                android:textColor="#fff"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextAppearance= "@style/MyAppearance"
+
+                app:boxStrokeColor="#21523C"
+                app:boxStrokeWidth="-10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="Product name"
+                    android:textColor="#21523C"
+                    android:textCursorDrawable= "@null"
+                    />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextAppearance= "@style/MyAppearance"
+
+                app:boxStrokeColor="#21523C"
+                app:boxStrokeWidth="-10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descriptionp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="Describe product"
+                    android:textColor="#21523C"
+                    android:textCursorDrawable= "@null"
+                    />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextAppearance= "@style/MyAppearance"
+
+                app:boxStrokeColor="#21523C"
+                app:boxStrokeWidth="-10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/pricep"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="Product price"
+                    android:textColor="#21523C"
+                    android:textCursorDrawable= "@null"
+                    />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:hintTextAppearance= "@style/MyAppearance"
+
+                app:boxStrokeColor="#21523C"
+                app:boxStrokeWidth="-10dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/imagep"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:hint="Product image "
+                    android:textColor="#21523C"
+                    android:textCursorDrawable= "@null"
+                    />
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <!--        <Button-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Submit"-->
+            <!--            android:background="@drawable/tansparent_button_background"-->
+            <!--            />-->
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+
+
+                <Button
+                    android:onClick="save"
+                    android:id="@+id/submitBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save changes"
+                    android:textSize="20dp"
+                    android:textColor="@drawable/changing_text_color"
+                    android:textStyle="bold|normal"
+                    android:background="@drawable/hover_button"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_anchor="@id/LinearLayout1"-->
+<!--            app:backgroundTint="#21523C"-->
+<!--            android:elevation="7dp"-->
+<!--            android:layout_margin="40dp"-->
+<!--            android:src="@drawable/arrow2"-->
+<!--            app:fabCustomSize="80dp"-->
+<!--            app:maxImageSize="56dp"-->
+<!--            app:layout_anchorGravity="bottom|right|end" />-->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>
